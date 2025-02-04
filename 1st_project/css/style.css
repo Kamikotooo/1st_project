@@ -1,0 +1,319 @@
+/* ========================== Общие стили ========================== */
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+/* Шрифты для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ========================== Стили для ссылок ========================== */
+
+/* Стили для всех ссылок */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #217dbb;
+    text-decoration: underline;
+}
+
+/* ========================== Стили для шапки ========================== */
+
+/* Стили для шапки */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* Стили для логотипа в шапке */
+header .logo {
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Стили для ссылок в шапке (меню) */
+header nav a {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================== Стили для основного контейнера main ========================== */
+
+/* Стили для основного контейнера */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для секций внутри main */
+main section {
+    margin-bottom: 2em;
+}
+
+/* Стили для заголовков h2 внутри main */
+main h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+     text-transform: uppercase;
+          font-weight: 700;
+          font-style: normal;
+         letter-spacing: 1px;
+}
+
+/* Стили для заголовков h3 внутри main */
+h3 {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-style: normal;
+}
+/* ========================== Стили для изображений ========================== */
+
+/* Стили для главного изображения */
+main .main-photo {
+    display: block;
+    max-width: 300px;
+   margin: 0;
+    border: 3px solid #2c3e50;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для второго изображения */
+main .second-photo {
+    display: block;
+    max-width: 1100px;
+    margin: 1em auto;
+}
+
+/* ========================== Стили для списков ========================== */
+
+/* Стили для списков */
+main ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Стили для элементов списка */
+main ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Стили для ссылок в списке */
+main ul li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+     display: inline-block; /* Чтобы hover-эффект работал по всей площади */
+         padding: 0.2em 0.5em;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+main ul li a:hover,
+main ul li a:focus {
+     color: #217dbb;
+        text-decoration: underline;
+}
+/* Стили для чередования строк в списке информации */
+main #information ul li:nth-child(odd) {
+     background-color: rgba(238, 238, 238, 0.5);
+}
+/* Стили для псевдоэлемента в списке информации*/
+main #information ul li:last-child::before {
+        content: "Важно! ";
+        display: inline-block;
+        margin-right: 5px;
+        padding: 0.2em 0.5em;
+        background-color: #f0ad4e;
+        color: #fff;
+         border-radius: 5px;
+        border: 1px solid #dca73a;
+    }
+/* ========================== Стили для текста ========================== */
+
+/* Стили для абзацев */
+main p {
+    text-align: justify;
+    margin-bottom: 1em;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+}
+/* Стили для разряженного текста параграфов */
+ article p::first-line {
+        letter-spacing: 1px;
+    }
+/* Стили для английского текста */
+  article p:lang(en) {
+        font-style: italic;
+        color: #555;
+    }
+    /* Стили для текста раздела Введение */
+main #introduction p {
+    color: #444;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Стили для цитат */
+main blockquote {
+    text-align: center;
+}
+
+/* ========================== Стили для подвала ========================== */
+
+/* Стили для подвала */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* Стили для ссылок в подвале */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для иконок соц. сетей в подвале */
+footer .social-icons a {
+    font-size: 2em;
+     border: 1px solid #fff;
+        padding: 0.5em;
+        border-radius: 50%;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+         margin: 0.2em;
+}
+footer .social-icons a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+         border-color: #3498db;
+    }
+/* ========================== Стили для flexbox-контейнеров ========================== */
+
+/* Стили для контейнера секции intro */
+main .intro-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Стили для текста в секции intro */
+main .intro-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Стили для контейнера в article1.html*/
+main .article-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Стили для текста в article1.html */
+main .article-text {
+    flex: 1;
+    text-align: left;
+}
+ /* Стили для картинки в article1.html*/
+main .article-photo {
+    display: block;
+    max-width: 300px;
+      margin: 0;
+    border: 3px solid #2c3e50;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+/* Стили для контейнера в секции nach_puti */
+main .path-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Стили для текста в секции nach_puti */
+main .path-text {
+    flex: 1;
+    text-align: left;
+}
+/* Стили для картинки в секции nach_puti */
+main .path-photo {
+    display: block;
+    max-width: 250px;
+     margin: 0;
+}
+/* Стили для контейнера в секции osnova */
+main .osnova-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Стили для текста в секции osnova */
+main .osnova-text {
+    flex: 1;
+    text-align: left;
+}
+ /* Стили для картинки в секции osnova */
+main .osnova-photo {
+    display: block;
+    max-width: 400px;
+      margin: 0;
+}
+/* ========================== Разное ========================== */
+
+/* Стили для отступов параграфа после картинок */
+ main img + p {
+      margin-top: 1em;
+ }
+   /* Стили для заголовков h1 */
+h1 {
+       text-decoration: underline;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 2px;
+    }
